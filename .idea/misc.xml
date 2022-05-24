@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Fork/madlevel6task1/app/src/main/res/layout/content_main.xml" value="0.307518115942029" />
+        <entry key="..\:/Fork/madlevel6task1/app/src/main/res/layout/fragment_first.xml" value="0.307518115942029" />
+        <entry key="..\:/Fork/madlevel6task1/app/src/main/res/layout/fragment_trivia.xml" value="0.307518115942029" />
         <entry key="..\:/Fork/madlevel6task1/app/src/main/res/layout/item_color.xml" value="0.307518115942029" />
       </map>
     </option>

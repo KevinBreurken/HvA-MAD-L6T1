@@ -10,7 +10,7 @@ import com.example.madlevel6task1.R
 import com.example.madlevel6task1.databinding.ItemColorBinding
 import com.example.madlevel6task1.model.ColorItem
 
-class ColorAdapter(private val colors: List<ColorItem>) :
+class ColorAdapter(private val colors: List<ColorItem>, private val onClick: (ColorItem) -> Unit) :
     RecyclerView.Adapter<ColorAdapter.ViewHolder>() {
 
     private lateinit var context: Context
@@ -28,6 +28,10 @@ class ColorAdapter(private val colors: List<ColorItem>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) = holder.bind(colors[position])
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        init {
+            itemView.setOnClickListener { onClick(colors[adapterPosition]) }
+        }
+
         private val binding = ItemColorBinding.bind(itemView)
 
         fun bind(colorItem: ColorItem) {
